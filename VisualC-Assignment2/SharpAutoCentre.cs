@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace VisualC_Assignment2
 {
-    public partial class Form1 : Form
+    public partial class SharpAutoCentre : Form
     {
-        public Form1()
+        public SharpAutoCentre()
         {
             InitializeComponent();
         }
