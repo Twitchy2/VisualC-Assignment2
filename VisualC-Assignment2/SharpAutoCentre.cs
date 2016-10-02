@@ -16,5 +16,34 @@ namespace VisualC_Assignment2
         {
             InitializeComponent();
         }
+
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void ClearButton_Click(object sender, EventArgs e)
+        {
+            SalesTaxTextBox.Text = "";
+            SubTotalTextBox.Text = "";
+            BaseTextBox.Text = "";
+            AdditionalTextBox.Text = "";
+            TotalTextBox.Text = "";
+            TradeInTextBox.Text = "";
+            AmountDueTextBox.Text = "";
+        }
+
+        private void CalculateButton_Click(object sender, EventArgs e)
+        {
+            double BasePrice;
+            double SubTotal;
+            double SalesTax;
+            double Total;
+            double TradeIn;
+            double AmountDue;
+            //put additional options here 
+            BasePrice = Convert.ToDouble(BaseTextBox.Text);
+
+        }
     }
 }

@@ -43,13 +43,13 @@
             this.SalesTaxTextBox = new System.Windows.Forms.TextBox();
             this.AdditionalTextBox = new System.Windows.Forms.TextBox();
             this.AdditionalGroupBox = new System.Windows.Forms.GroupBox();
-            this.ExteriorGroupBox = new System.Windows.Forms.GroupBox();
-            this.StandardRadioButton = new System.Windows.Forms.RadioButton();
-            this.CustomizedRadioButton = new System.Windows.Forms.RadioButton();
-            this.PearlizedRadioButton = new System.Windows.Forms.RadioButton();
-            this.SteroCheckBox = new System.Windows.Forms.CheckBox();
-            this.LeatherInteriorCheckBox = new System.Windows.Forms.CheckBox();
             this.ComputerCheckBox = new System.Windows.Forms.CheckBox();
+            this.LeatherInteriorCheckBox = new System.Windows.Forms.CheckBox();
+            this.SteroCheckBox = new System.Windows.Forms.CheckBox();
+            this.ExteriorGroupBox = new System.Windows.Forms.GroupBox();
+            this.PearlizedRadioButton = new System.Windows.Forms.RadioButton();
+            this.CustomizedRadioButton = new System.Windows.Forms.RadioButton();
+            this.StandardRadioButton = new System.Windows.Forms.RadioButton();
             this.CalculateButton = new System.Windows.Forms.Button();
             this.ExitButton = new System.Windows.Forms.Button();
             this.ClearButton = new System.Windows.Forms.Button();
@@ -188,6 +188,36 @@
             this.AdditionalGroupBox.TabStop = false;
             this.AdditionalGroupBox.Text = "Additional Items";
             // 
+            // ComputerCheckBox
+            // 
+            this.ComputerCheckBox.AutoSize = true;
+            this.ComputerCheckBox.Location = new System.Drawing.Point(65, 115);
+            this.ComputerCheckBox.Name = "ComputerCheckBox";
+            this.ComputerCheckBox.Size = new System.Drawing.Size(125, 17);
+            this.ComputerCheckBox.TabIndex = 2;
+            this.ComputerCheckBox.Text = "Computer Navigation";
+            this.ComputerCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // LeatherInteriorCheckBox
+            // 
+            this.LeatherInteriorCheckBox.AutoSize = true;
+            this.LeatherInteriorCheckBox.Location = new System.Drawing.Point(65, 68);
+            this.LeatherInteriorCheckBox.Name = "LeatherInteriorCheckBox";
+            this.LeatherInteriorCheckBox.Size = new System.Drawing.Size(97, 17);
+            this.LeatherInteriorCheckBox.TabIndex = 1;
+            this.LeatherInteriorCheckBox.Text = "Leather Interior";
+            this.LeatherInteriorCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // SteroCheckBox
+            // 
+            this.SteroCheckBox.AutoSize = true;
+            this.SteroCheckBox.Location = new System.Drawing.Point(65, 21);
+            this.SteroCheckBox.Name = "SteroCheckBox";
+            this.SteroCheckBox.Size = new System.Drawing.Size(88, 17);
+            this.SteroCheckBox.TabIndex = 0;
+            this.SteroCheckBox.Text = "Stero System";
+            this.SteroCheckBox.UseVisualStyleBackColor = true;
+            // 
             // ExteriorGroupBox
             // 
             this.ExteriorGroupBox.Controls.Add(this.PearlizedRadioButton);
@@ -200,16 +230,16 @@
             this.ExteriorGroupBox.TabStop = false;
             this.ExteriorGroupBox.Text = "Exterior Finish";
             // 
-            // StandardRadioButton
+            // PearlizedRadioButton
             // 
-            this.StandardRadioButton.AutoSize = true;
-            this.StandardRadioButton.Location = new System.Drawing.Point(65, 23);
-            this.StandardRadioButton.Name = "StandardRadioButton";
-            this.StandardRadioButton.Size = new System.Drawing.Size(68, 17);
-            this.StandardRadioButton.TabIndex = 0;
-            this.StandardRadioButton.TabStop = true;
-            this.StandardRadioButton.Text = "Standard";
-            this.StandardRadioButton.UseVisualStyleBackColor = true;
+            this.PearlizedRadioButton.AutoSize = true;
+            this.PearlizedRadioButton.Location = new System.Drawing.Point(65, 64);
+            this.PearlizedRadioButton.Name = "PearlizedRadioButton";
+            this.PearlizedRadioButton.Size = new System.Drawing.Size(68, 17);
+            this.PearlizedRadioButton.TabIndex = 2;
+            this.PearlizedRadioButton.TabStop = true;
+            this.PearlizedRadioButton.Text = "Pearlized";
+            this.PearlizedRadioButton.UseVisualStyleBackColor = true;
             // 
             // CustomizedRadioButton
             // 
@@ -222,46 +252,16 @@
             this.CustomizedRadioButton.Text = "Customized Detailing";
             this.CustomizedRadioButton.UseVisualStyleBackColor = true;
             // 
-            // PearlizedRadioButton
+            // StandardRadioButton
             // 
-            this.PearlizedRadioButton.AutoSize = true;
-            this.PearlizedRadioButton.Location = new System.Drawing.Point(65, 64);
-            this.PearlizedRadioButton.Name = "PearlizedRadioButton";
-            this.PearlizedRadioButton.Size = new System.Drawing.Size(68, 17);
-            this.PearlizedRadioButton.TabIndex = 2;
-            this.PearlizedRadioButton.TabStop = true;
-            this.PearlizedRadioButton.Text = "Pearlized";
-            this.PearlizedRadioButton.UseVisualStyleBackColor = true;
-            // 
-            // SteroCheckBox
-            // 
-            this.SteroCheckBox.AutoSize = true;
-            this.SteroCheckBox.Location = new System.Drawing.Point(65, 21);
-            this.SteroCheckBox.Name = "SteroCheckBox";
-            this.SteroCheckBox.Size = new System.Drawing.Size(88, 17);
-            this.SteroCheckBox.TabIndex = 0;
-            this.SteroCheckBox.Text = "Stero System";
-            this.SteroCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // LeatherInteriorCheckBox
-            // 
-            this.LeatherInteriorCheckBox.AutoSize = true;
-            this.LeatherInteriorCheckBox.Location = new System.Drawing.Point(65, 68);
-            this.LeatherInteriorCheckBox.Name = "LeatherInteriorCheckBox";
-            this.LeatherInteriorCheckBox.Size = new System.Drawing.Size(97, 17);
-            this.LeatherInteriorCheckBox.TabIndex = 1;
-            this.LeatherInteriorCheckBox.Text = "Leather Interior";
-            this.LeatherInteriorCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // ComputerCheckBox
-            // 
-            this.ComputerCheckBox.AutoSize = true;
-            this.ComputerCheckBox.Location = new System.Drawing.Point(65, 115);
-            this.ComputerCheckBox.Name = "ComputerCheckBox";
-            this.ComputerCheckBox.Size = new System.Drawing.Size(125, 17);
-            this.ComputerCheckBox.TabIndex = 2;
-            this.ComputerCheckBox.Text = "Computer Navigation";
-            this.ComputerCheckBox.UseVisualStyleBackColor = true;
+            this.StandardRadioButton.AutoSize = true;
+            this.StandardRadioButton.Location = new System.Drawing.Point(65, 23);
+            this.StandardRadioButton.Name = "StandardRadioButton";
+            this.StandardRadioButton.Size = new System.Drawing.Size(68, 17);
+            this.StandardRadioButton.TabIndex = 0;
+            this.StandardRadioButton.TabStop = true;
+            this.StandardRadioButton.Text = "Standard";
+            this.StandardRadioButton.UseVisualStyleBackColor = true;
             // 
             // CalculateButton
             // 
@@ -271,6 +271,7 @@
             this.CalculateButton.TabIndex = 16;
             this.CalculateButton.Text = "Calculate";
             this.CalculateButton.UseVisualStyleBackColor = true;
+            this.CalculateButton.Click += new System.EventHandler(this.CalculateButton_Click);
             // 
             // ExitButton
             // 
@@ -280,6 +281,7 @@
             this.ExitButton.TabIndex = 17;
             this.ExitButton.Text = "Exit";
             this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // ClearButton
             // 
@@ -289,6 +291,7 @@
             this.ClearButton.TabIndex = 18;
             this.ClearButton.Text = "Clear";
             this.ClearButton.UseVisualStyleBackColor = true;
+            this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
             // 
             // PicturePic
             // 
