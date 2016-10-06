@@ -312,9 +312,11 @@
             // 
             // PicturePic
             // 
+            this.PicturePic.Image = global::VisualC_Assignment2.Properties.Resources.Sharp_Auto_Centre;
             this.PicturePic.Location = new System.Drawing.Point(286, 178);
             this.PicturePic.Name = "PicturePic";
             this.PicturePic.Size = new System.Drawing.Size(212, 144);
+            this.PicturePic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PicturePic.TabIndex = 19;
             this.PicturePic.TabStop = false;
             // 
@@ -347,6 +349,7 @@
             this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(104, 22);
             this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
@@ -365,31 +368,34 @@
             this.calculateToolStripMenuItem.Name = "calculateToolStripMenuItem";
             this.calculateToolStripMenuItem.ShortcutKeyDisplayString = "c";
             this.calculateToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.calculateToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.calculateToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.calculateToolStripMenuItem.Text = "Calculate";
+            this.calculateToolStripMenuItem.Click += new System.EventHandler(this.calculateToolStripMenuItem_Click);
             // 
             // clearToolStripMenuItem
             // 
             this.clearToolStripMenuItem.Name = "clearToolStripMenuItem";
             this.clearToolStripMenuItem.ShortcutKeyDisplayString = "l";
             this.clearToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.L)));
-            this.clearToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.clearToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.clearToolStripMenuItem.Text = "Clear";
+            this.clearToolStripMenuItem.Click += new System.EventHandler(this.clearToolStripMenuItem_Click);
             // 
             // fontToolStripMenuItem
             // 
             this.fontToolStripMenuItem.Name = "fontToolStripMenuItem";
             this.fontToolStripMenuItem.ShortcutKeyDisplayString = "f";
             this.fontToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.T)));
-            this.fontToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.fontToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.fontToolStripMenuItem.Text = "Font";
+            this.fontToolStripMenuItem.Click += new System.EventHandler(this.fontToolStripMenuItem_Click);
             // 
             // colourToolStripMenuItem
             // 
             this.colourToolStripMenuItem.Name = "colourToolStripMenuItem";
             this.colourToolStripMenuItem.ShortcutKeyDisplayString = "o";
             this.colourToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.colourToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.colourToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.colourToolStripMenuItem.Text = "Colour";
             // 
             // helpToolStripMenuItem
@@ -443,6 +449,7 @@
             this.Name = "SharpAutoCentre";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sharp Auto Centre";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SharpAutoCentre_FormClosing);
             this.AdditionalGroupBox.ResumeLayout(false);
             this.AdditionalGroupBox.PerformLayout();
             this.ExteriorGroupBox.ResumeLayout(false);

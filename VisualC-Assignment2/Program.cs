@@ -16,7 +16,7 @@ namespace VisualC_Assignment2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SharpAutoCentre());
+            Application.Run(new SplashForm());
         }
     }
 }
