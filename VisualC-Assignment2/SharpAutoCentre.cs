@@ -219,16 +219,46 @@ namespace VisualC_Assignment2
             Application.Exit();
         }
 
+        /// <summary>
+        /// Changes all of the font to what is selected on the font dialouge box
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void fontToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FontDialog fontDialog = new FontDialog();
-            DialogResult result = fontDialog.ShowDialog();
-            if (result == DialogResult.OK)
+            if (fontDialog.ShowDialog() == DialogResult.OK)
             {
-                // Get Font.
-                // Font font = result.font;
-                // Set TextBox properties.
-                //BaseLabel.Font = font;
+                BaseLabel.Font = fontDialog.Font;
+                AdditionalLabel.Font = fontDialog.Font;
+                SubTotalLabel.Font = fontDialog.Font;
+                SalesTaxLabel.Font = fontDialog.Font;
+                TotalLabel.Font = fontDialog.Font;
+                TradeInLabel.Font = fontDialog.Font;
+                AmountLabel.Font = fontDialog.Font;
+
+                AdditionalGroupBox.Font = fontDialog.Font;
+                SteroCheckBox.Font = fontDialog.Font;
+                LeatherInteriorCheckBox.Font = fontDialog.Font;
+                ComputerCheckBox.Font = fontDialog.Font;
+
+                ExteriorGroupBox.Font = fontDialog.Font;
+                CustomizedRadioButton.Font = fontDialog.Font;
+                StandardRadioButton.Font = fontDialog.Font;
+                PearlizedRadioButton.Font = fontDialog.Font;
+
+                CalculateButton.Font = fontDialog.Font;
+                ClearButton.Font = fontDialog.Font;
+                ExitButton.Font = fontDialog.Font;
+            }
+        }
+
+        private void colourToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ColorDialog colourDialog = new ColorDialog();
+            if (colourDialog.ShowDialog() == DialogResult.OK)
+            {
+                this.BackColor = colourDialog.Color;
             }
         }
     }

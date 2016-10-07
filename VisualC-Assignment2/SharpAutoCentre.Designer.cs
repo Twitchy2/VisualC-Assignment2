@@ -397,6 +397,7 @@
             this.colourToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
             this.colourToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.colourToolStripMenuItem.Text = "Colour";
+            this.colourToolStripMenuItem.Click += new System.EventHandler(this.colourToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
