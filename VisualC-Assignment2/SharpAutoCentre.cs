@@ -84,11 +84,9 @@ namespace VisualC_Assignment2
         {
             //put additional options here 
             //actual math now
-            if (BasePrice < 0 || Aditional < 0 || SubTotal < 0 || SalesTax < 0 || Total < 0 || TradeIn < 0 || AmountDue < 0)
-            {
+            BasePrice = Convert.ToDouble(BaseTextBox.Text);
+            TradeIn = Convert.ToDouble(TradeInTextBox.Text);
 
-
-                BasePrice = Convert.ToDouble(BaseTextBox.Text);
 
                 AdditionalTextBox.Text = Aditional.ToString("C2");
 
@@ -101,15 +99,8 @@ namespace VisualC_Assignment2
                 Total = SubTotal + SalesTax;
                 TotalTextBox.Text = Total.ToString("C2");
 
-                TradeIn = Convert.ToDouble(TradeInTextBox.Text);
-
                 AmountDue = Total - TradeIn;
                 AmountDueTextBox.Text = AmountDue.ToString("C2");
-            }
-            else
-            {
-                MessageBox.Show("All entered values need to be numeric and be above zero!", "Math error!");
-            }
 
 
         }
